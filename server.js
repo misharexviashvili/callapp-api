@@ -48,7 +48,9 @@ app.delete("/api/data/:id", (req, res) => {
       res.status(500).send("Error reading data file");
     } else {
       let existingData = JSON.parse(data);
-      existingData = existingData.filter((item) => item.id !== id);
+      existingData = existingData.filter((item) => {
+        return item.id !== parseInt(id);
+      });
       fs.writeFile("data.json", JSON.stringify(existingData), (err) => {
         if (err) {
           console.error(err);
@@ -71,7 +73,7 @@ app.patch("/api/data/:id", (req, res) => {
     } else {
       let existingData = JSON.parse(data);
       existingData = existingData.map((item) => {
-        if (item.id === id) {
+        if (item.id === parseInt(id)) {
           return {
             ...item,
             ...newData,

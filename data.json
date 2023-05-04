@@ -653,16 +653,5 @@
             "city": "San Diego"
         },
         "phone": "+1 (813) 531-3665"
-    },
-    {
-        "id": 999,
-        "name": "Gaylord Goodwin",
-        "email": "hansongoodwin@gology.com",
-        "gender": "male",
-        "address": {
-            "street": "Cranberry Street",
-            "city": "New York"
-        },
-        "phone": "+1 (947) 576-2508"
     }
 ]
