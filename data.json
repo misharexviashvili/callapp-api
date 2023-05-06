@@ -114,6 +114,10 @@
         "name": "Carla Cain",
         "email": "carlacain@gology.com",
         "gender": "female",
+        "address": {
+            "street": "Harway Avenue",
+            "city": "Chicago"
+        },
         "phone": "+1 (997) 454-2728"
     },
     {
